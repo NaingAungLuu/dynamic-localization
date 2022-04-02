@@ -1,0 +1,23 @@
+{
+  "en" : {
+    "lblGreeting" : "Hello",
+    "lblSelectedLanguage" : "Selected Language : %@",
+    "lblEnglish" : "English",
+    "lblBurmese" : "Burmese",
+    "lblChinese" : "Chinese"
+  },
+  "cn" : {
+    "lblGreeting" : "你好",
+    "lblSelectedLanguage" : "选择的语言 : %@",
+    "lblEnglish" : "英语",
+    "lblBurmese" : "缅甸语",
+    "lblChinese" : "中文"
+  },
+  "mm" : {
+    "lblGreeting" : "မင်္ဂလာပါ။",
+    "lblSelectedLanguage" : "ရွေးချယ်ထားသောဘာသာစကား : %@",
+    "lblEnglish" : "အင်္ဂလိပ်",
+    "lblBurmese" : "ဗမာ",
+    "lblChinese" : "တရုတ်"
+  }
+}
