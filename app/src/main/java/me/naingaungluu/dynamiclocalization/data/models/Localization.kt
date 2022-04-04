@@ -14,7 +14,8 @@ class Localization : Serializable {
     var lblChinese : String = ""
 
     companion object {
-        //dummy
+        const val TEMPLATE_HANDLE = "%@"
+
         private val dummy = Localization().apply {
             lblGreeting = "Hello"
             lblSelectedLanguage = "Selected Language : %@"
@@ -25,9 +26,9 @@ class Localization : Serializable {
         fun getDefaultLocalization() : Localization = dummy
 
         fun getTemplatedString(format: String, vararg params: String): String =
-            if (params.isNotEmpty() && format.contains("%@"))
+            if (params.isNotEmpty() && format.contains(TEMPLATE_HANDLE))
                 getTemplatedString(
-                    format.replaceFirst("%@", params.first()),
+                    format.replaceFirst(TEMPLATE_HANDLE, params.first()),
                     *params.drop(1).toTypedArray()
                 )
         else
